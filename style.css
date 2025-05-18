@@ -1,10 +1,10 @@
 body{
-  background-colour: blue;
+  background-color: blue;
 }
 .button1{
   border:4px;
   padding:20px;
-  colour:yellow;
+  color:yellow;
 }
 h1{
   font-style:italic;
@@ -13,5 +13,5 @@ h1{
   text-align:centre;
 }
 .button2{
-  colour:orange;
+  color:orange;
 }
