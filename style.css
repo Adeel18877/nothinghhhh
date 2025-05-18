@@ -1,11 +1,11 @@
 body{
-  background-color:lightpurple;
+  background-color:Skin;
 }
 .button1{
-  border:4px;
-  padding:20px;
+  border:10px;
+  padding:25px;
   color:red;
-  font-size:20px;
+  font-size:30px;
   font-style:italic;
 }
 h1{
@@ -16,6 +16,7 @@ h1{
 }
 .button2{
   color:darkblue;
-  font-size:20px;
+  font-size:30px;
   font-style:italic;
+border:10;
 }
