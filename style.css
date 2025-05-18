@@ -7,9 +7,10 @@ body{
   colour:yellow;
 }
 h1{
-  font-style:waterflow;
-  font-align:centre;
-  font-size:15px;
+  font-style:italic;
+  font-align:;
+  font-size:40px
+  text-align:centre;
 }
 .button2{
   colour:orange;
