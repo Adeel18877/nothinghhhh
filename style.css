@@ -1,5 +1,5 @@
 body{
-  background-color:Skin;
+  background-color:Black;
 }
 .button1{
   border:10px;
@@ -12,6 +12,7 @@ h1{
   font-style:italic;
   font-size:70px;
   text-align:center;
+  color:white;
   
 }
 .button2{
