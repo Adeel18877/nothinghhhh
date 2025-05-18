@@ -1,22 +1,21 @@
 body{
-  background-color:purple;
+  background-color:lightpurple;
 }
 .button1{
   border:4px;
   padding:20px;
-  color:yellow;
+  color:red;
   font-size:20px;
   font-style:italic;
 }
 h1{
   font-style:italic;
-  font-align:;
-  font-size:40px;
+  font-size:70px;
   text-align:centre;
   
 }
 .button2{
-  color:orange;
+  color:darkblue;
   font-size:20px;
   font-style:italic;
 }
