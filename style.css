@@ -7,6 +7,7 @@ body{
   color:red;
   font-size:40px;
   font-style:italic;
+aling:center;
 }
 h1{
   font-style:italic;
@@ -20,7 +21,8 @@ h1{
   font-size:40px;
   font-style:italic;
 border:10;
-padding:25;
+padding:25px;
+align:center
 }
 img{
 text-align:center;
