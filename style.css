@@ -44,3 +44,9 @@ transform:translate(-50%,-50%);
 button:active{
 background-color:green;
 }
+#bg{
+display:flex;
+justify-content:center;
+align-items:center;
+height:250px;
+}
