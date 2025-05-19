@@ -13,7 +13,7 @@ h1{
   font-style:italic;
   font-size:100px;
   text-align:center;
-  color:parrot;
+  color:green;
   
 }
 .button2{
@@ -25,8 +25,8 @@ padding:30px;
 background:white;
 }
 h2{
-color:golden;
-font-style:pacifico;
+color:purple;
+font-style:italic;
 font-size:80px;
 text-align:center;
 }
