@@ -42,9 +42,6 @@ top:50%;
 left:50%;
 transform:translate(-50%,-50%); 
 }
-button:active{
-background-color:green;
-}
 button:hover.stars{
 display:block;
 filter:drop-shadow(0 0 10px );
