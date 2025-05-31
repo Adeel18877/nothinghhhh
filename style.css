@@ -48,17 +48,6 @@ font-style:bold;
 color:light blue;
 position:after img;
 }
-.button {
-  background-color: #008CBA; /* Blue */
-  color: white;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-.button:hover {
-  background-color: #005f73; /* Darker blue */
-  transform: scale(1.05);   /* Slightly enlarge the button */
+button:active{
+background-color:green;
 }
