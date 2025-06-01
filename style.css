@@ -8,7 +8,7 @@ button{
   color:white;
   font-size:5px;
   font-style:bold;
-background: sky blue;
+background: skyblue;
 }
 h1{
   font-style:italic;
@@ -41,5 +41,5 @@ color:light blue;
 position:after img;
 }
 button:active{
-background-color:green;
+background-color:skyblue;
 }
