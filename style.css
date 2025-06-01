@@ -4,11 +4,12 @@ text-align:center;
 }
 button{
   border-radius:10px;
-  padding:25px;
-  color:white;
-  font-size:5px;
+  padding:5px;
+  color:black;
+  font-size:20px;
   font-style:bold;
 background: skyblue;
+border-color:blue;
 }
 h1{
   font-style:italic;
