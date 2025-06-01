@@ -2,13 +2,13 @@ body{
   background-color:white;
 text-align:center;
 }
-.button1{
+button{
   border-radius:10px;
   padding:25px;
-  color:red;
-  font-size:40px;
-  font-style:italic;
-background:white;
+  color:white;
+  font-size:5px;
+  font-style:bold;
+background: sky blue;
 }
 h1{
   font-style:italic;
@@ -16,14 +16,6 @@ h1{
   text-align:center;
   color:green;
   
-}
-.button2{
-  color:red;
-  font-size:40px;
-  font-style:italic;
-border-radius:10px;
-padding:30px;
-background:white;
 }
 h2{
 color:purple;
