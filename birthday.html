@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Khala 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ffb6c1, #ffe4e1, #ffccf9);
+      background-size: 400% 400%;
+      animation: bgAnim 20s ease infinite;
+      overflow-x: hidden;
+      color: #fff;
+    }
+
+    @keyframes bgAnim {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .main-title {
+      font-size: 48px;
+      color: #fff;
+      text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff1493;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .poem {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 15px;
+      padding: 25px;
+      line-height: 1.7;
+      color: #444;
+      box-shadow: 0 0 15px rgba(255,105,180,0.5);
+    }
+
+    .cake {
+      width: 200px;
+      margin: 30px auto;
+      display: block;
+      animation: heartbeat 2s infinite;
+    }
+
+    @keyframes heartbeat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .sparkle {
+      font-size: 24px;
+      margin-top: 20px;
+      animation: sparkle 2s ease-in-out infinite;
+      color: #fff8dc;
+      text-shadow: 0 0 10px #ff69b4;
+    }
+
+    @keyframes sparkle {
+      0% { opacity: 0.2; }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0.2; }
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      margin: 10px;
+      font-size: 18px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      transition: transform 0.2s, background 0.3s;
+    }
+
+    .buttons button:hover {
+      transform: scale(1.05);
+      background-color: #ff1493;
+    }
+
+    canvas#charm {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body onload="startCharm()">
+
+  <div class="container">
+    <h1 class="main-title">🎉 Happy Birthday Dear Khala 🎉</h1>
+
+    <div class="poem">
+      Roses are red, <br>
+      Violets are blue, <br>
+      A Khala like you, <br>
+      Is precious and true! 💖<br><br>
+
+      May your day shine as bright as your smile, <br>
+      May joy and blessings fill your every mile. <br>
+      Lots of love and dua for your special day! 🌹
+    </div>
+
+    <img class="cake" src="https://cdn.pixabay.com/photo/2017/02/01/17/25/birthday-2039992_1280.png" alt="Birthday Cake">
+
+    <div class="sparkle">🎈 You're the heart of our home, Khala! 🎈</div>
+
+    <div class="buttons">
+      <button onclick="location.href='index.html'">🏠 Back to Home</button>
+      <button onclick="location.reload()">🎉 Wish Again</button>
+      <button onclick="alert('🎁 Surprise! May this year be your best yet!')">🎁 Surprise</button>
+    </div>
+  </div>
+
+  <canvas id="charm"></canvas>
+  <script src="script.js"></script>
+</body>
+</html
