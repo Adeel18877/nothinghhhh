@@ -1,65 +1,112 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  
-    <title>Avengers</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Just for You</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #e0c3fc, #8ec5fc, #f9c1d9, #d9e4f5);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
+      overflow: hidden;
+      position: relative;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .box {
+      text-align: center;
+      z-index: 2;
+    }
+
+    h1 {
+      font-size: 40px;
+      color: #333;
+      margin-bottom: 30px;
+      text-shadow: 0 0 5px rgba(255,255,255,0.6);
+    }
+
+    button {
+      padding: 15px 35px;
+      font-size: 20px;
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.2s ease, background 0.3s ease;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+      background-color: #5a00b3;
+      transform: scale(1.05);
+    }
+
+    /* Blast Effect */
+    .blast-circle {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: radial-gradient(circle, #ffffff, #ffefff);
+      border-radius: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(0);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .blast {
+      animation: explode 1s forwards ease-out;
+    }
+
+    @keyframes explode {
+      0% {
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+        box-shadow: 0 0 0 rgba(255, 255, 255, 0.5);
+      }
+      70% {
+        transform: translate(-50%, -50%) scale(20);
+        box-shadow: 0 0 150px 60px rgba(255, 255, 255, 0.8);
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(50);
+        opacity: 0;
+      }
+    }
+  </style>
 </head>
 <body>
-<h1><b><u>World of Avengers</u></b>
-</h1>
-<img height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ__hBbVmJcdPNkeNm1x8wgqj8FMBI5RFX0gZq5ekRjudH9xjipH2pV7iQp&s=10">
-<h4 style="color:rgb(160, 200, 230);"><b>Introduction</b></h4>
-<p><b>The Avengers are a superhero team from Marvel Comics and the Marvel Cinematic Universe (MCU). They are known for their collaborative efforts to defend Earth and the galaxy from various threats. The team's history spans comic books, films, and other media, with different iterations and members throughout the years.</b></p>
-<h1><u>Avengers movies</u></h1>
-<h3 style=" color:rgb(160, 200, 230);
-"><u>In order to watch</u></h3>
+  <div class="box">
+    <h1>Welcome</h1>
+    <button onclick="blastAndGo()">Open Me</button>
+  </div>
 
-  <h2><ul><li><b>The Avengers</u></b></li><br></h2>
-<img height="350" src="https://i.ebayimg.com/images/g/abUAAOSwiSlldA3T/s-l1200.webp"><br>
-<h5 style="text-align:left;">Key Points:</h5>
-<ol style="text-align:left; font-size:18px;color:rgb(240, 240, 220)">
-  <li><strong>Loki invades Earth</strong></li>
-  <li><strong>Avengers team forms</strong></li>
-  <li><strong>Heroes argue</strong></li>
-  <li><strong>Battle in New York</strong></li>
-  <li><strong>Loki is defeated</strong></li>
-</ol>
+  <div id="blast" class="blast-circle"></div>
 
+  <script>
+    function blastAndGo() {
+      const blast = document.getElementById("blast");
+      blast.classList.add("blast");
 
-
-    <h2><ul><li><b>Avengers:Age Of Ultron</u></b></li><br></h2>
-<img height="360"src="https://m.media-amazon.com/images/I/81mmNk1-LbL._SL1500_.jpg"><br>
-<h5>Key Points:</h5>
-<ol style="text-align: left; font-size: 18px; color:rgb(240, 240, 220)">
-  <li><strong>Avengers recover Loki's scepter</strong></li>
-  <li><strong>Ultron is accidentally created </strong></li>
-  <li><strong>Ultron turns against humanity</strong></li>
-  <li><strong>Vision is born to stop Ultron</strong></li>
-  <li><strong>Sokovia is destroyed in final battle</strong></li>
-</ol>
-
-    <h2><li><b>Avengers:Infinity War</u></b></li><br></h2>
-<img height="360"src="https://m.media-amazon.com/images/I/91IfP0TQjaL._SL1500_.jpg">
-<h5>Key Points:</h5>
-<ol style="text-align: left; font-size: 18px; color:rgb(240, 240, 220)">
-  <li><strong>Thanos attacks Thor’s ship</strong></li>
-  <li><strong>Thanos collects Infinity Stones</strong></li>
-  <li><strong>Avengers try to stop him</strong></li>
-  <li><strong>Thanos defeats everyone</strong></li>
-  <li><strong>Half the universe is snapped away</strong></li>
-</ol>
-
-      <h2><li><b>Avengers:End Game</u></b> </li><br></h2>
-<img height="360"src="https://m.media-amazon.com/images/I/7103d-g1quL._SL1500_.jpg">
-
-<h5>Key Points:</h5>
-<ol style="text-align: left; font-size: 18px;color:rgb(240, 240, 220)">
-  <li><strong>Avengers deal with the Snap</strong></li>
-  <li><strong>They plan a time heist</strong></li>
-  <li><strong>Infinity Stones are collected</strong></li>
-  <li><strong>Hulk brings everyone back</strong></li>
-  <li><strong>Iron Man sacrifices himself</strong></li>
-</ol>
-
+      setTimeout(() => {
+        window.location.href = "birthday.html";
+      }, 1000);
+    }
+  </script>
 </body>
 </html>
